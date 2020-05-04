@@ -1,5 +1,5 @@
 {
-    "name": "denis909/yii2-json-attribute-behavior",
+    "name": "denis909/yii2-json-params-behavior",
     "type": "library",
     "license": "MIT",
     "autoload": {
