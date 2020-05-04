@@ -3,11 +3,17 @@
 namespace denis909\yii;
 
 use yii\helpers\Json;
+use yii\helpers\ArrayHelper;
 
 class JsonParamsBehavior extends \yii\base\Behavior
 {
 
     public $attribute = 'params_json';
+
+    public function getParam($name, $default = null)
+    {
+        return ArrayHelper::getValue($this->getParams(), $name, $default);
+    }
 
     public function getParams() : array
     {
